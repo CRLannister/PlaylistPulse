@@ -15,7 +15,6 @@ conda/
 *.sqlite3
 *.log
 *.pid
-*.pkl
 *.h5
 model/
 checkpoints/
