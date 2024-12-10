@@ -36,8 +36,14 @@ The goal of this project is to build an intelligent music recommender system tha
 3. **Real-time API Integration**:
 
     FastAPI serves the model via a RESTful API.
+   ![image](https://github.com/user-attachments/assets/e58c10ba-e707-4e8f-959f-8761662793d6)
+
     The API takes user inputs (e.g., song Name, Artist Name) and returns the top recommendations based on the model’s predictions.
+   ![image](https://github.com/user-attachments/assets/df6fb706-a4db-4ce2-b9cc-c5b285435ab7)
+
     A React (TypeScript) web app interfaces with the FastAPI backend, displaying song recommendations to users.
+   ![image](https://github.com/user-attachments/assets/2ed6956c-ed3f-4092-8e52-093a4eac89a8)
+
 
 ## Technologies Used:
 
