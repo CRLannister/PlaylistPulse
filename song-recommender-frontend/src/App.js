@@ -1,0 +1,24 @@
+// src/App.js                                                                                                                                                                                                     
+import React from 'react';                                                                                                                                                                                        
+import { SearchBar } from './components/SearchBar';                                                                                                                                                               
+import { RecommendationsList } from './components/RecommendationsList';                                                                                                                                           
+import { Header } from './components/Header';                                                                                                                                                                     
+import { Footer } from './components/Footer';                                                                                                                                                                     
+import { MusicProvider } from './context/MusicContext';                                                                                                                                                           
+                                                                                                                                                                                                                  
+function App() {                                                                                                                                                                                                  
+  return (                                                                                                                                                                                                        
+    <MusicProvider>                                                                                                                                                                                               
+      <div className="min-h-screen bg-gradient-to-b from-gray-900 to-black text-white">                                                                                                                           
+        <Header />                                                                                                                                                                                                
+        <main className="container mx-auto px-4 py-8">                                                                                                                                                            
+          <SearchBar />                                                                                                                                                                                           
+          <RecommendationsList />                                                                                                                                                                                 
+        </main>                                                                                                                                                                                                   
+        <Footer />                                                                                                                                                                                                
+      </div>                                                                                                                                                                                                      
+    </MusicProvider>                                                                                                                                                                                              
+  );                                                                                                                                                                                                              
+}                                                                                                                                                                                                                 
+                                                                                                                                                                                                                  
+export default App;
