@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "playlistpulse"
+version = "0.1.0"
+description = ""
+authors = ["CRLannister <agarwal.ashish.singhal@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.6"
+uvicorn = "^0.32.1"
+pydantic = "^2.10.3"
+pandas = "^2.2.3"
+numpy = "^2.2.0"
+torch = "^2.5.1"
+scikit-learn = "^1.6.0"
+transformers = "^4.47.0"
+tqdm = "^4.67.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
