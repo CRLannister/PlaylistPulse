@@ -10,7 +10,7 @@ export function MusicProvider({ children }) {
   const [loading, setLoading] = useState(false);                                                                                                                                                                  
   const [error, setError] = useState(null);                                                                                                                                                                       
                                                                                                                                                                                                                   
-  const API_URL = 'http://10.105.10.80:8032';                                                                                                                                                                        
+  const API_URL = 'http://10.105.10.80:8035';                                                                                                                                                                        
                                                                                                                                                                                                                   
   const searchSongs = async (query) => {                                                                                                                                                                          
     try {                                                                                                                                                                                                         
