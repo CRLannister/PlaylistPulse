@@ -6,25 +6,26 @@ Objective:
 The goal of this project is to build an intelligent music recommender system that generates personalized song suggestions based on user preferences. By analyzing content-based features (song attributes and lyrics embedding features), the system aims to offer highly relevant music recommendations.  
 
 ## Key Features:
-  - **Training Details:**
-         1. Processes both numerical and categorical features
-         2. Generates BERT embeddings for lyrics with caching
-         3. Implements early stopping and learning rate scheduling
-         4. Uses MSE loss to train the model
-         5. Saves both model weights and preprocessor for later use
-         6. Includes progress bars and detailed logging
+  - **Training Details:**     
+       1. Processes both numerical and categorical features  
+       2. Generates BERT embeddings for lyrics with caching  
+       3. Implements early stopping and learning rate scheduling  
+       4. Uses MSE loss to train the model  
+       5. Saves both model weights and preprocessor for later use  
+       6. Includes progress bars and detailed logging
+   
   - **Real-time Personalization:** Adapt song recommendations based on recent user search.
   - **FastAPI Backend:** API server built with FastAPI, serving the recommendation model and handling user requests.
   - **React Frontend (TypeScript):** A responsive web interface that allows users to interact with the system and view personalized recommendations.
   - **Pre-trained Model and Embeddings:** The neural network model is pre-trained and deployed to provide quick, real-time recommendations.
 
 ## Architecture Overview:
-1. **Model Components**:
+1. **Model Components**:  
 
-     • Input: Combined feature vector (song features + lyrics embeddings)
-     • Output: Reconstructed feature vector
-     • Loss: MSE between original and reconstructed features
-     • The model learns to create a meaningful latent space that captures both musical and lyrical similarities
+     • Input: Combined feature vector (song features + lyrics embeddings)  
+     • Output: Reconstructed feature vector  
+     • Loss: MSE between original and reconstructed features  
+     • The model learns to create a meaningful latent space that captures both musical and lyrical similarities  
 
 2. **Recommendation Process**:
 
@@ -47,13 +48,13 @@ The goal of this project is to build an intelligent music recommender system tha
 
 ## Data Requirements:
 
-  - Song Metadata: Genre, artist, release year, etc.
-  - Lyrics : Song Lyrics fetched from genius api.
-  - Audio Features : Tempo, key, energy, loudness.
+  - Song Metadata: Genre, artist, release year, etc. Dataset Obtained from [here](https://data.mendeley.com/datasets/3t9vbwxgr5/2)
+  - Lyrics : Song Lyrics fetched from genius api. Documentation can be found [here](https://docs.genius.com/)
+  - Audio Features : Tempo, key, energy, loudness. Dataset Obtained from [here](https://data.mendeley.com/datasets/3t9vbwxgr5/2)
 
 ## Evaluation Metrics:
 
-  Mean Squared Error (MSE): Used for similarity score between feature embeddings.
+  Mean Squared Error (MSE): MSE between original and reconstructed features.
 
 ## Project Workflow:
 
@@ -62,12 +63,12 @@ The goal of this project is to build an intelligent music recommender system tha
       Audio features are used to enrich recommendations.
       The model is trained, saved as a .pth file, and includes embeddings, preprocessor, and model weights.
 
-    - API Development:
-        A FastAPI server serves the trained model and handles incoming recommendation requests.
-        The API takes user input and returns personalized song recommendations.
+  - API Development:
+      A FastAPI server serves the trained model and handles incoming recommendation requests.
+      The API takes user input and returns personalized song recommendations.
 
-    - Web App Interface:
-        A React app (written in TypeScript) is used to display song recommendations and interact with the API.
+  - Web App Interface:
+      A React app (written in TypeScript) is used to display song recommendations and interact with the API.
 
 ## How to Run the Project Locally:
 1. Clone the Repository:
