@@ -79,7 +79,8 @@ Key Features:
     Create and activate a virtual environment.
     Install dependencies:
     ```
-    pip install -r requirements.txt
+    poetry init
+    poetry install
     ```
 3. Set up the Frontend:
 
@@ -93,7 +94,7 @@ Key Features:
     ```
 4. Start the Backend:
     ```
-    uvicorn backend.main:app --reload
+    poetry run python main.py
     ```
 5. Start the Frontend:
     ```
