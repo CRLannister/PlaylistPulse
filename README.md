@@ -77,7 +77,7 @@ The goal of this project is to build an intelligent music recommender system tha
   - Web App Interface:
       A React app (written in TypeScript) is used to display song recommendations and interact with the API.
 
-## How to Run the Project Locally:
+## How to Run the Project Locally (Make sure you have Python 3.12):
 1. Clone the Repository:
     ```
     git clone https://github.com/CRLannister/PlaylistPulse.git
@@ -88,7 +88,7 @@ The goal of this project is to build an intelligent music recommender system tha
     Create and activate a virtual environment.
     Install dependencies:
     ```
-    poetry init
+    pip install poetry
     poetry install
     ```
 3. Set up the Frontend:
