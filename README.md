@@ -1,7 +1,8 @@
 # PlaylistPulse: Neural Network-Based Song Recommender System
 
-PlaylistPulse is a personalized song recommendation system powered by deep learning. Using a neural network-based approach, it analyzes song attributes to provide tailored music suggestions. This project demonstrates how to leverage song metadata, and lyrics embedding features to create an intelligent, adaptable recommendation engine.
-Objective:
+PlaylistPulse is a personalized song recommendation system powered by deep learning. Using a neural network-based approach, it analyzes song attributes to provide tailored music suggestions. This project demonstrates how to leverage song metadata, and lyrics embedding features to create an intelligent, adaptable recommendation engine.  
+
+## Objective:
 
 The goal of this project is to build an intelligent music recommender system that generates personalized song suggestions based on user preferences. By analyzing content-based features (song attributes and lyrics embedding features), the system aims to offer highly relevant music recommendations.  
 
