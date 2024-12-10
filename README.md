@@ -3,16 +3,17 @@
 PlaylistPulse is a personalized song recommendation system powered by deep learning. Using a neural network-based approach, it analyzes song attributes to provide tailored music suggestions. This project demonstrates how to leverage song metadata, and lyrics embedding features to create an intelligent, adaptable recommendation engine.
 Objective:
 
-The goal of this project is to build an intelligent music recommender system that generates personalized song suggestions based on user preferences. By analyzing content-based features (song attributes and lyrics embedding features), the system aims to offer highly relevant music recommendations.
-Key Features:
-    
-  - **Lyrics Feature Integration:** Uses both Numerical features of a song like 'dating',
-     'violence', 'world/life', 'night/time', 'shake the audience',
-     'family/gospel', 'romantic', 'communication', 'obscene', 'music',
-     'movement/places', 'light/visual perceptions', 'family/spiritual',
-     'like/girls', 'sadness', 'feelings', 'danceability', 'loudness',
-     'acousticness', 'instrumentalness', 'valence', 'energy' as well as lyrics which is converted to embeddings.
-  -** Real-time Personalization: **Adapt song recommendations based on recent user search.
+The goal of this project is to build an intelligent music recommender system that generates personalized song suggestions based on user preferences. By analyzing content-based features (song attributes and lyrics embedding features), the system aims to offer highly relevant music recommendations.  
+
+## Key Features:
+  - **Training Details:**
+         1. Processes both numerical and categorical features
+         2. Generates BERT embeddings for lyrics with caching
+         3. Implements early stopping and learning rate scheduling
+         4. Uses MSE loss to train the model
+         5. Saves both model weights and preprocessor for later use
+         6. Includes progress bars and detailed logging
+  - **Real-time Personalization:** Adapt song recommendations based on recent user search.
   - **FastAPI Backend:** API server built with FastAPI, serving the recommendation model and handling user requests.
   - **React Frontend (TypeScript):** A responsive web interface that allows users to interact with the system and view personalized recommendations.
   - **Pre-trained Model and Embeddings:** The neural network model is pre-trained and deployed to provide quick, real-time recommendations.
@@ -20,10 +21,10 @@ Key Features:
 ## Architecture Overview:
 1. **Model Components**:
 
-    Song Embeddings: Captures song characteristics like genre, artist, and metadata.
-    Lyrics Embeddings: Captures song lyrics.
-    Audio Features: Song-specific features (e.g., tempo, energy) to enrich recommendations.
-    Neural Network Layers: Dense layers process embeddings, capturing complex interactions between users and songs.
+     • Input: Combined feature vector (song features + lyrics embeddings)
+     • Output: Reconstructed feature vector
+     • Loss: MSE between original and reconstructed features
+     • The model learns to create a meaningful latent space that captures both musical and lyrical similarities
 
 2. **Recommendation Process**:
 
