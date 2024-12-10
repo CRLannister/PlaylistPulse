@@ -1,0 +1,2 @@
+model_weights.pth filter=lfs diff=lfs merge=lfs -text
+cleaned_lyrics_data.csv filter=lfs diff=lfs merge=lfs -text
