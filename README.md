@@ -120,5 +120,5 @@ The goal of this project is to build an intelligent music recommender system tha
   - Hybrid Models: Combine collaborative filtering with content-based features (e.g., using audio features and metadata).
   - Model Fine-tuning: Adapt the model for more personalized recommendations based on evolving user preferences.
 
-Contributing:
+##Contributing:  
   Contributions are welcome! Please open an issue or submit a pull request if you'd like to contribute. Be sure to follow the project guidelines and maintain code quality.
