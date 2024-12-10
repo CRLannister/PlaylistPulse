@@ -1,7 +1,8 @@
 # PlaylistPulse: Neural Network-Based Song Recommender System
 
-PlaylistPulse is a personalized song recommendation system powered by deep learning. Using a neural network-based approach, it analyzes song attributes to provide tailored music suggestions. This project demonstrates how to leverage song metadata, and lyrics embedding features to create an intelligent, adaptable recommendation engine.
-Objective:
+PlaylistPulse is a personalized song recommendation system powered by deep learning. Using a neural network-based approach, it analyzes song attributes to provide tailored music suggestions. This project demonstrates how to leverage song metadata, and lyrics embedding features to create an intelligent, adaptable recommendation engine.  
+
+## Objective:
 
 The goal of this project is to build an intelligent music recommender system that generates personalized song suggestions based on user preferences. By analyzing content-based features (song attributes and lyrics embedding features), the system aims to offer highly relevant music recommendations.  
 
@@ -76,7 +77,7 @@ The goal of this project is to build an intelligent music recommender system tha
   - Web App Interface:
       A React app (written in TypeScript) is used to display song recommendations and interact with the API.
 
-## How to Run the Project Locally:
+## How to Run the Project Locally (Make sure you have Python 3.12):
 1. Clone the Repository:
     ```
     git clone https://github.com/CRLannister/PlaylistPulse.git
@@ -87,7 +88,7 @@ The goal of this project is to build an intelligent music recommender system tha
     Create and activate a virtual environment.
     Install dependencies:
     ```
-    poetry init
+    pip install poetry
     poetry install
     ```
 3. Set up the Frontend:
@@ -119,5 +120,5 @@ The goal of this project is to build an intelligent music recommender system tha
   - Hybrid Models: Combine collaborative filtering with content-based features (e.g., using audio features and metadata).
   - Model Fine-tuning: Adapt the model for more personalized recommendations based on evolving user preferences.
 
-Contributing:
+## Contributing:  
   Contributions are welcome! Please open an issue or submit a pull request if you'd like to contribute. Be sure to follow the project guidelines and maintain code quality.
